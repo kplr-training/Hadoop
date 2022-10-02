@@ -72,3 +72,4 @@ Infos des blocs de fichiers :
 ```console  
 hdfs fsck /user/nom_prénom/data/molière.txt -files -blocks -locations 
 ```  
+![F](https://user-images.githubusercontent.com/78825764/193478311-f4629acf-6147-4864-aea1-9435a8f3de5d.png)
