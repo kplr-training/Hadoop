@@ -25,19 +25,19 @@ mv 40086-0.txt molière.txt
 3 - Créer un répertoire sous HDFS.
 
 ```console
-hdfs dfs -mkdir /user/nom_prénom
+hdfs dfs - mkdir /user/nom_prénom
 ```
 
 4 - Insérer le fichier dans ce répertoire HDFS via la commande PUT dans votre répertoire user.
 
 ```console
-hdfs dfs -put /home/hadoop/molière.txt /user/nom_prénom
+hdfs dfs - put /home/hadoop/molière.txt /user/nom_prénom
 ```
 
 5 - Vérifier la présence de ce fichier dans votre répertoire hdfs user via la commande LS (hdfs).
 
 ```console
-hdfs dfs -ls /user/nom_prénom
+hdfs dfs - ls /user/nom_prénom
 ```
 
 ---
@@ -45,17 +45,17 @@ hdfs dfs -ls /user/nom_prénom
 
 1 - Créer un répertoire hdfs “data” dans votre répertoire “user/mon_prenom”.
 ```console
-hdfs dfs -mkdir /user/nom_prénom/data
+hdfs dfs - mkdir /user/nom_prénom/data
 ```
 
 2 - Déplacer le fichier 40086-0.txt depuis hdfs dans ce répertoire data.
 ```console
- hdfs fs -mv /user/nom_prénom/molière.txt /user/nom_prénom/data
+ hdfs fs - mv /user/nom_prénom/molière.txt /user/nom_prénom/data
 ```
 
 3 - Modifier les droits hdfs de ce fichier pour le rendre accessible uniquement à vous.
 ```console
-hdfs dfs -chmod 600 /user/nom_prénom/data
+hdfs dfs - chmod 700 /user/nom_prénom/data
  ```
 
 :information_source: Consulter la doc pour les commandes :  mkdir / mv / chmod / etc.)
@@ -70,5 +70,5 @@ Localiser les données relatives au fichier chargé dans HDFS lors de la premiè
 
 Infos des blocs de fichiers :
 ```console  
-hdfs fsck /user/nom_prénom/data/molière.txt -files -blocks -locations 
+hdfs fsck /user/nom_prénom/data/molière.txt - files - blocks - locations 
 ```  
